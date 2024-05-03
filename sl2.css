@@ -1,0 +1,298 @@
+body { 
+  list-style-type: transparent;
+  background-image: url(https://giffiles.alphacoders.com/212/212822.gif);
+}
+h1, h2, p {
+	text-align: center;
+  color: #fdbdfd;
+	font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  list-style-type: transparent;
+}
+form{
+  background-color: rgba(24, 20, 34, 0.76);
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 40px;
+  box-shadow: 0px 6px 20px rgba(190, 190, 190, 0.651);
+}
+.header {
+  box-shadow: 0px 6px 20px rgba(190, 190, 190, 0.651);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #2323239b;
+  border-radius: 10px;
+  margin-top: 8px;
+  list-style-type: transparent;
+}
+.footer {
+  width: 6%;
+  align-items: center;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.imgs {
+  filter: invert(100);
+  border-radius: 50%;
+}
+.imgs:hover{
+  box-shadow: 0px 6px 20px rgb(190, 190, 190);
+  transition: 0.5s;
+  background: #1d1d1d15;
+}
+.input  {
+   border-radius: 8px; 
+   background:#212121!important; 
+   border: 2px solid #fdbdff;
+   height: 36px;
+   width: 200px;
+   font-size: 16px; 
+   font-display: auto;
+   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+   color: #fdbdfd;
+   box-shadow: #fdbdfd02 5px 15px 30px 5px;
+
+}
+.input:focus{
+  box-shadow: #fdbdfd5b 5px 15px 30px 5px;
+  transition: 0.4s;
+}
+textarea {
+  background:transparent!important; 
+  border: 2px solid #fdbdff;
+  color: #fdbdfd;
+  width: 200px;
+  height: 50px;
+  font-size: 16px; 
+  border-radius: 8px; 
+   font-display: auto;
+   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+}
+textarea:focus{
+  box-shadow: #fdbdfd5b 5px 15px 30px 5px;
+  transition: 0.2s;
+}
+.hov {
+  border-radius: 20%;
+}
+.hov:hover {
+  box-shadow: 0px 6px 20px rgba(190, 190, 190, 0.802);
+  transition: 0.5s;
+  background: #1d1d1d67;
+}
+select, option {
+  background:transparent!important; 
+  border: 2px solid #fdbdff;
+   border-radius: 8px; 
+   outline: none; 
+   height: 36px;
+   width: 200px;
+   font-size: 20px; 
+   font-display: auto;
+   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+   text-decoration-color: #000;
+  color: #fdbdfd;
+}
+.text {
+	color: #fff;
+	font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-weight: 400;
+}
+.dropdown {
+  position: relative;
+  list-style-type: transparent;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: relative;
+  min-width: 160px;
+  z-index: 1;
+  transform: translateY(-100%);
+  opacity: 0;
+  list-style-type: transparent;
+}
+aside {
+  margin-top: 250px;
+}
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 10%;
+	height: 100%;
+	padding: 30px;
+  background: transparent;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+  z-index: 2;
+  color: #fff;
+	font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  border-radius: 10px;
+  margin-top: 15px;
+  list-style-type: transparent;
+}
+.menu.active {
+	transform: translateX(0);
+}
+.menu ul,li{
+  margin-top: 0px;
+  background: transparent;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color:#Fff;
+  font-weight: 400;
+	font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+	list-style-type: transparent;
+}
+.menu a {
+  margin-top: 0px;
+  width: 70px;
+  background: rgb(11, 10, 41);
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color:#Fff;
+  font-weight: 400;
+	font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+	list-style-type: transparent;
+}
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index: 3;
+	overflow: hidden;
+  margin-left: 15px;
+}
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	transition: all 0.5s;
+  z-index: 2;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.logo:hover {
+  box-shadow: 0px 6px 20px rgba(190, 190, 190, 0.651);
+  transition: 0.5s;
+}
+select{
+  border: 1px solid #fdbdfd;
+  background-color: white;
+  color:#fdbdfd;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 20px;
+  padding: 10px 30px 10px 10px;
+  width: 200px;
+  height: 200PX;
+  border-radius: 5px;
+}
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px #fdbdfd;
+  border-color:#fdbdfd;
+  background-color: #fdbdfd;
+}
+.dropdown-content label {
+  color: rgb(164, 164, 164);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content:active  {
+ transform: translateY(0);
+}
+.dropdown-content li {
+	list-style-type: transparent;
+}
+.btn {
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #fdbdff;
+  border: 2px solid #fdbdff;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  background: linear-gradient(45deg,#000000 33%, #fdbdf5, #0000 67%) var(--_p,100%)/300% no-repeat,
+  #000000;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  box-shadow: rgba(152, 65, 252, 0) 0 15px 30px -5px;
+  box-sizing: border-box;
+}
+.btn:hover,
+.button:focus-visible {
+  --_p: 0%;
+  color: #fdbdfd; 
+  box-shadow: #fdbdfd36 5px 15px 15px 5px;
+}
+.btn1 {
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #3b3b3b;
+  border: 2px solid #3c3c3c;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  background: linear-gradient(45deg,#000000 33%, #363636, #0000 67%) var(--_p,100%)/300% no-repeat,
+  #000000;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  box-shadow: rgba(160, 160, 160, 0) 0 15px 30px -5px;
+  box-sizing: border-box;
+}
+.btn1:hover,
+.button:focus-visible {
+  --_p: 0%;
+  background: linear-gradient(65deg,#000000 33%, #363636, #0000 67%) var(--_p,100%)/300% no-repeat,
+  #000000;
+  box-shadow: #fdbdfd5b 5px 15px 15px 5px;
+  color: #fdbdff;
+  border: 2px solid #fdbdff;
+}
+nav {
+  list-style-type: transparent;
+}

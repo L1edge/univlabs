@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk-ua"> 
+<head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="sl2.css">
+      <link rel="shortcut icon"  type="image/x-icon" href="images/moon.png">
+  <title> Реєстрація</title>	
+</head>
+<body>
+<header class="header"> 		
+      <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside class="menu">
+    <nav>
+      <ul>
+        <li><a href="w.html">Головна</a></li>
+        <li><a href="images/a.html">Відео</a></li>
+        <li><a href="images/b.html">Фото</a></li>
+        <li><a href="report.html">Вхід</a></li>
+      </ul>
+</nav>
+  </aside>
+    <h1>Реєстрація </h1>  
+  <a onclick="history.back()">
+    <img src="images/back.png" class="logo" width="32" height="32" style="padding-right: 2px;">
+  </a>
+</header>
+<form>
+  
+  
+  <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; height: 80vh; gap:3px">
+  <h2>Введіть ваші дані</h2>
+
+	<input type="text" class="input" placeholder="Ваше ім'я" required ><br>
+
+	<input type="email" class="input" placeholder="Ваша електронна пошта" required ><br>
+
+	<input type="password" class="input" placeholder="Ваш пароль" required ><br>
+
+	<input type="tel" class="input" id="phone" name="phone" placeholder="Номер телефону" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required><br>
+	<small class="text">Формат: 123 456 78 90</small><br> 
+
+  <textarea  required rows="3" cols="30" placeholder="Напишіть про себе"></textarea><br>
+<br>
+<p>Завнатаже ваше фото профілю</p>
+<input type="file" class="input"><br><br>
+
+   
+  <div style="display: inline-block;">
+  <br><br>
+    <input type="reset"  value="Скинути" class="btn1">
+    <input type="submit" value="Зберегти" class="btn">
+       </div>
+      </div>
+    </form>
+    <footer class="footer">
+      <a href="https://www.instagram.com/korol1uk/"><img src="images/inst.png" width="48px" height="48px" class="hov"></a>
+      <a href="https://steamcommunity.com/id/liedge/"><img src="images/steam.png" width="48px" height="48px" class="imgs"></a>
+    </footer>
+  </body>
+  <script>let selBtn = document.querySelector('.btn');
+    let sel = document.querySelector('.dropdown-content');
+    selBtn.addEventListener('click', function(){
+      sel.classList.toggle('active');
+    })</script>
+    <script>let menuBtn = document.querySelector('.menu-btn');
+			let menu = document.querySelector('.menu');
+			menuBtn.addEventListener('click', function(){
+				menu.classList.toggle('active');
+			})</script>
+  </html>
